@@ -1,0 +1,61 @@
+﻿@section control {
+    @Html.Bold().ReportDesigner("reportdesigner").AjaxBeforeLoad("onAjaxBeforeLoad").ReportOpened("onReportOpened").ServiceUrl(ReportsMVCSamples.Models.Globals.DESIGNER_SERVICE_URL).Create("controlCreate").ToolbarRendering("toolbarRendering").ToolbarClick("toolbarClick").ToolbarSettings(tb => tb.Items(BoldReports.ReportDesignerEnums.ToolbarItems.All & ~BoldReports.ReportDesignerEnums.ToolbarItems.Save)).ReportItemExtensions(
+        ext => {
+            ext.ClassName("EJBarcode").Name("barcode").ImageClass("customitem-barcode").DisplayName("1D Barcode").Category("Barcodes").Add();
+            ext.ClassName("EJQRBarcode").Name("qrbarcode").ImageClass("customitem-qrbarcode").DisplayName("QR Barcode").Category("Barcodes").Add();
+         })
+
+    <script>
+        let designerInst;
+        let isServerReoport;
+        function controlCreate() {
+            designerInst = $('#reportdesigner').data('boldReportDesigner')
+            let reportName = getReportName();
+            designerInst.setModel({
+                reportType: 'RDLC',
+                previewReport: previewReport
+            });
+            if (reportName) {
+                designerInst.openReport(reportName);
+            }
+        }
+
+        function onAjaxBeforeLoad(args) {
+                args.data = JSON.stringify({ reportType: "RDLC" });
+        }
+
+        function onReportOpened(args) {
+            isServerReoport = args.isServerReport;
+        }
+
+        function previewReport(args) {
+            if (isServerReoport) {
+                let reportPath = args.model.reportPath;
+                reportPath = reportPath.indexOf('//') !== -1 ? reportPath.substring(2) : reportPath
+                let reportNameWithoutExt = reportPath.split(".rdlc")[0];
+                datasource = rdlcData[reportNameWithoutExt];
+                args.cancelDataInputDialog = true;
+                args.dataSets = datasource;
+            }
+        }
+
+        function toolbarRendering(args) {
+            if ($(args.target).hasClass('e-rptdesigner-toolbarcontainer')) {
+                var saveButton = ej.buildTag('li.e-rptdesigner-toolbarli e-designer-toolbar-align e-tooltxt', '', {}, {});
+                var saveIcon = ej.buildTag('span.e-rptdesigner-toolbar-icon e-toolbarfonticonbasic e-rptdesigner-toolbar-save e-li-item', '', {}, { title: 'Save' });
+                args.target.find('ul:first').append(saveButton.append(saveIcon));
+            }
+        }
+        function toolbarClick(args) {
+            if (args.click === 'Save') {
+                args.cancel = true;
+                designerInst.saveToDevice();
+            }
+        }
+
+        function getReportName() {
+            const reportNameRegex = /[\\?&]report-name=([^&#]*)/.exec(location.search);
+            return reportNameRegex ? reportNameRegex[1] : undefined;
+        };
+    </script>
+}
