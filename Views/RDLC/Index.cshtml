@@ -13,7 +13,10 @@
             let reportName = getReportName();
             designerInst.setModel({
                 reportType: 'RDLC',
-                previewReport: previewReport
+                previewReport: previewReport,
+                 previewOptions: {
+                    exportItemClick: "onExportItemClick"
+                }
             });
             if (reportName) {
                 designerInst.openReport(reportName);
@@ -21,7 +24,7 @@
         }
 
         function onAjaxBeforeLoad(args) {
-                args.data = JSON.stringify({ reportType: "RDLC" });
+            args.data = JSON.stringify({ reportType: "RDLC" });
         }
 
         function onReportOpened(args) {
