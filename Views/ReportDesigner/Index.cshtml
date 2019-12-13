@@ -10,6 +10,11 @@
         function controlCreate() {
             designerInst = $('#reportdesigner').data('boldReportDesigner')
             let reportName = getReportName();
+            designerInst.setModel({
+                previewOptions: {
+                    exportItemClick: "onExportItemClick"
+                }
+            });
             if (reportName) {
                 designerInst.openReport(reportName);
             }
@@ -26,6 +31,7 @@
                 args.target.find('ul:first').append(saveButton.append(saveIcon));
             }
         }
+
         function toolbarClick(args) {
             if (args.click === 'Save') {
                 args.cancel = true;
