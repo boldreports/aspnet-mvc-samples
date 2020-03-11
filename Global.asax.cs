@@ -9,14 +9,16 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Bold.Licensing;
+using BoldReports.Base.Logger;
 namespace ReportsMVCSamples
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-        public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         protected void Application_Start()
         {
             string License = File.ReadAllText(Server.MapPath("BoldLicense.txt"), Encoding.UTF8);
+            log4net.GlobalContext.Properties["LogPath"] = this.GetAppDataFolderPath();
+            BoldReports.Base.Logger.LogExtension.RegisterLog4NetConfig();
             BoldLicenseProvider.RegisterLicense(License);
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
@@ -24,5 +26,17 @@ namespace ReportsMVCSamples
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        public string GetAppDataFolderPath()
+        {
+            try
+            {
+                return System.IO.Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory );
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
     }
 }
