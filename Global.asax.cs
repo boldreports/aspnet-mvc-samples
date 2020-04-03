@@ -9,7 +9,11 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Bold.Licensing;
+using BoldReports.Web;
+using Newtonsoft.Json;
 using BoldReports.Base.Logger;
+using System.Reflection;
+
 namespace ReportsMVCSamples
 {
     public class MvcApplication : System.Web.HttpApplication
@@ -20,6 +24,11 @@ namespace ReportsMVCSamples
             log4net.GlobalContext.Properties["LogPath"] = this.GetAppDataFolderPath();
             BoldReports.Base.Logger.LogExtension.RegisterLog4NetConfig();
             BoldLicenseProvider.RegisterLicense(License);
+            ReportConfig.DefaultSettings = new ReportSettings()
+            {
+                MapSetting = this.GetMapSettings()
+            };
+
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
@@ -36,6 +45,23 @@ namespace ReportsMVCSamples
             {
                 return null;
             }
+        }
+        private BoldReports.Web.MapSetting GetMapSettings()
+        {
+            try
+            {
+                string basePath = HttpContext.Current.Server.MapPath("~/Scripts");
+                return new MapSetting()
+                {   
+                    ShapePath = basePath + "\\ShapeData\\",
+                    MapShapes = JsonConvert.DeserializeObject<List<MapShape>>(System.IO.File.ReadAllText(basePath + "\\ShapeData\\mapshapes.txt"))
+                };
+            }
+            catch (Exception ex)
+            {
+                LogExtension.LogError("Failed to Load Map Settings", ex, MethodBase.GetCurrentMethod());
+            }
+            return null;
         }
 
     }
