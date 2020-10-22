@@ -60,12 +60,12 @@ namespace ReportsMVCSamples.Controllers
             switch ((string)sampleData.basePath)
             {
                 case "ReportViewer":
-                    metaContent = "The ASP.NET MVC bold report viewer allows the end-users to visualize the " + title + " report in browsers.";
+                    metaContent = "The ASP.NET MVC Bold Report Viewer allows the end-users to visualize the " + title + " report in browsers.";
                     title += " | Preview | ASP.NET MVC Report Viewer";
                     break;
                 case "ReportWriter":
                     title += " | Preview | ASP.NET MVC Report Writer";
-                    metaContent = "The ASP.NET MVC bold report writer allows the end-users to download the report in browsers without visualizing the report.";
+                    metaContent = "The ASP.NET MVC Bold Report Writer allows the end-users to download the report in browsers without visualizing the report.";
                     break;
                 default:
                     title = "";

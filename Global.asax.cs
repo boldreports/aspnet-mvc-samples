@@ -27,7 +27,7 @@ namespace ReportsMVCSamples
             ReportConfig.DefaultSettings = new ReportSettings()
             {
                 MapSetting = this.GetMapSettings()
-            };
+            }.RegisterExtensions(this.GetDataExtension());
 
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
@@ -35,6 +35,20 @@ namespace ReportsMVCSamples
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        private List<string> GetDataExtension()
+        {
+            var extensions = !string.IsNullOrEmpty(System.Configuration.ConfigurationManager.AppSettings["ExtAssemblies"]) ? System.Configuration.ConfigurationManager.AppSettings["ExtAssemblies"] : string.Empty;
+            try
+            {
+                return new List<string>(extensions.Split(new string[] { ";" }, StringSplitOptions.RemoveEmptyEntries));
+            }
+            catch (Exception ex)
+            {
+                LogExtension.LogError("Failed to Load Data Extension", ex, MethodBase.GetCurrentMethod());
+            }
+            return null;
+        }
+
         public string GetAppDataFolderPath()
         {
             try
