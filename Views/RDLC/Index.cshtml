@@ -2,7 +2,7 @@
     @Html.Bold().ReportDesigner("reportdesigner").AjaxBeforeLoad("onAjaxBeforeLoad").ReportOpened("onReportOpened").ServiceUrl(ReportsMVCSamples.Models.Globals.DESIGNER_SERVICE_URL).Create("controlCreate").ToolbarRendering("toolbarRendering").ToolbarClick("toolbarClick").ToolbarSettings(tb => tb.Items(BoldReports.ReportDesignerEnums.ToolbarItems.All & ~BoldReports.ReportDesignerEnums.ToolbarItems.Save)).ReportItemExtensions(
         ext => {
             ext.ClassName("EJBarcode").Name("barcode").ImageClass("customitem-barcode").DisplayName("1D Barcode").Category("Barcodes").Add();
-            ext.ClassName("EJQRBarcode").Name("qrbarcode").ImageClass("customitem-qrbarcode").DisplayName("QR Barcode").Category("Barcodes").Add();
+            ext.ClassName("EJQRBarcode").Name("matrixbarcode").ImageClass("customitem-qrbarcode").DisplayName("2D Barcode").Category("Barcodes").Add();
          })
 
     <script>

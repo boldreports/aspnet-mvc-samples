@@ -1,6 +1,6 @@
 ﻿@section control {
 
-    @Html.Bold().ReportViewer("ReportViewer").ReportPath("load-large-data.rdlc").ReportServiceUrl(ReportsMVCSamples.Models.Globals.SERVICE_URL).ReportLoaded("onReportLoaded").ProcessingMode(BoldReports.ReportViewerEnums.ProcessingMode.Local).ToolbarRendering("onToolbarRendering").ToolBarItemClick("onToolBarItemClick").ExportItemClick("onExportItemClick").ToolbarSettings(toolbar => toolbar.Items(BoldReports.ReportViewerEnums.ToolbarItems.All & ~BoldReports.ReportViewerEnums.ToolbarItems.Export & ~BoldReports.ReportViewerEnums.ToolbarItems.Print))
+    @Html.Bold().ReportViewer("ReportViewer").ReportPath("load-large-data.rdlc").ReportServiceUrl(ReportsMVCSamples.Models.Globals.SERVICE_URL).ReportLoaded("onReportLoaded").ProcessingMode(BoldReports.ReportViewerEnums.ProcessingMode.Local).ToolbarRendering("onToolbarRendering").ToolBarItemClick("onToolBarItemClick").ExportItemClick("onExportItemClick").ToolbarSettings(toolbar => toolbar.Items(BoldReports.ReportViewerEnums.ToolbarItems.All & ~BoldReports.ReportViewerEnums.ToolbarItems.Export & ~BoldReports.ReportViewerEnums.ToolbarItems.Print & ~BoldReports.ReportViewerEnums.ToolbarItems.ExportSetup))
 
     <script>
         function onReportLoaded(args) {
