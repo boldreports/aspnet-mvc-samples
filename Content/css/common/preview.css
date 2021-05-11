@@ -90,6 +90,7 @@ body {
     position: fixed;
     z-index: 1;
     justify-content: space-between;
+    top: 0;
 }
 
     .ej-preview-header .ej-preview-left-side {
