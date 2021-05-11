@@ -23,7 +23,7 @@ namespace ReportsMVCSamples
             string License = File.ReadAllText(Server.MapPath("BoldLicense.txt"), Encoding.UTF8);
             log4net.GlobalContext.Properties["LogPath"] = this.GetAppDataFolderPath();
             BoldReports.Base.Logger.LogExtension.RegisterLog4NetConfig();
-            BoldLicenseProvider.RegisterLicense(License);
+            BoldLicenseProvider.RegisterLicense(License, bool.Parse(System.Configuration.ConfigurationManager.AppSettings["IsOfflineLicense"]));
             ReportConfig.DefaultSettings = new ReportSettings()
             {
                 MapSetting = this.GetMapSettings()
