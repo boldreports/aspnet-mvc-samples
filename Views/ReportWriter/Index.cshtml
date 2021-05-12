@@ -38,6 +38,12 @@
                 </div>
                 <input type="text" style="display:none" name="reportName" />
                 <input class="r-w-genearte e-button e-js e-ntouch e-btn-normal e-btn e-select e-widget" type="submit" value="Generate" />
+                @if (!ReportsMVCSamples.Models.Globals.isPhatomJSExist)
+                {
+                    <div class="alert alert-warning alert-dismissible" role="alert">
+                        Data Visualization report items will not be exported properly since <a href="https://phantomjs.org/" target="_blank">PhanthomJS</a> was not found in this application.
+                    </div>
+                }
             </div>
         </div>
     </form>
@@ -51,7 +57,7 @@
                 prevEle.classList.remove('r-w-sample-active');
             }
             args.event.currentTarget.classList.add('r-w-sample-active');
-            reportNameInputele.value  = args.name;
+            reportNameInputele.value = args.name;
         }
 
         $(function () {

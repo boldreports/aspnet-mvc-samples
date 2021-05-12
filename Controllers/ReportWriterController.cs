@@ -58,8 +58,6 @@ namespace ReportsMVCSamples.Controllers.ReportViewer
                     "../../bold-reports/common/bold.reports.widgets.min.js",
                     //Chart component script
                     "../../bold-reports/data-visualization/ej.chart.min.js",
-                    //Map component script
-                    "../../bold-reports/data-visualization/ej.map.min.js",
                     //Report Viewer Script
                     "../../bold-reports/bold.report-viewer.min.js"
                 };
@@ -76,7 +74,7 @@ namespace ReportsMVCSamples.Controllers.ReportViewer
                 }
                 else if (type == "word")
                 {
-                    fileName += ".doc";
+                    fileName += ".docx";
                     format = WriterFormat.Word;
                 }
                 else if (type == "html")
@@ -96,7 +94,7 @@ namespace ReportsMVCSamples.Controllers.ReportViewer
                 }
                 else
                 {
-                    fileName += ".xls";
+                    fileName += ".xlsx";
                     format = WriterFormat.Excel;
                 }
                 reportWriter.Save(fileName, format, httpContext.Response);

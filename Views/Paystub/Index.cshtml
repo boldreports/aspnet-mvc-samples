@@ -1,0 +1,32 @@
+﻿﻿@section control {
+
+    @Html.Bold().ReportViewer("ReportViewer").ReportPath("paystub.rdlc").ReportServiceUrl(ReportsMVCSamples.Models.Globals.SERVICE_URL).ReportLoaded("onReportLoaded").ProcessingMode(BoldReports.ReportViewerEnums.ProcessingMode.Local).ToolbarRendering("onToolbarRendering").ToolBarItemClick("onToolBarItemClick").ExportItemClick("onExportItemClick")
+
+    <script>
+        function onReportLoaded(args) {
+            let reportNameWithoutExt = args.model.reportPath.split(".")[0];
+            let reportObj = $('#ReportViewer').data("boldReportViewer");
+            reportObj.model.dataSources = rdlcData[reportNameWithoutExt];
+        }
+    </script>
+}
+
+@section description {
+    <div id="description">
+        <p>
+            Paystub RDLC report represents the paystub of a company in a single sheet using <a href="https://help.boldreports.com/on-premise/report-designer/report-items/tablix/"
+                                                                                                 target="_blank">Tablix</a> report item.
+        </p>
+        <ul>
+            <li>
+                The Paystub are displayed dynamically using <a href="https://help.boldreports.com/on-premise/report-designer/compose-report/properties-panel/#set-expression"
+                                                                target="_blank">expression</a> with the text box report item.
+            </li>
+            <li>The data used in this table is a local JSON data.</li>
+        </ul>
+        <p>
+            More information about RDLC report can be found in this <a href="https://help.boldreports.com/javascript/report-viewer/rdlc-report/" target="_blank">documentation</a>
+            section.
+        </p>
+    </div>
+}
