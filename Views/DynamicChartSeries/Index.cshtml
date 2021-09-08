@@ -1,0 +1,21 @@
+@section control {
+
+    @Html.Bold().ReportViewer("ReportViewer").ReportPath("dynamic-chart-series.rdl").ReportServiceUrl(ReportsMVCSamples.Models.Globals.SERVICE_URL).ToolbarRendering("onToolbarRendering").ToolBarItemClick("onToolBarItemClick").ExportItemClick("onExportItemClick")
+    <style>
+        .e-reportviewer-toggleicon {
+            color: #fff;
+        }
+    </style>
+}
+
+@section description {
+    <div id="description">
+        <p>
+            This demo shows the VisitorsCount, PurchaserCount, AddedToCartCount by dynamically chossing the chart series.
+        </p>
+        <p>
+            More information about the Chart report item can be found in this <a href="https://help.boldreports.com/enterprise-reporting/designer-guide/report-designer/report-items/chart/"
+                                                                                  target="_blank">documentation</a> section.
+        </p>
+    </div>
+}
