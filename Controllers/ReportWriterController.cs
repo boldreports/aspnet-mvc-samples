@@ -92,6 +92,11 @@ namespace ReportsMVCSamples.Controllers.ReportViewer
                     fileName += ".ppt";
                     format = WriterFormat.PPT;
                 }
+                else if (type == "xml")
+                {
+                    fileName += ".xml";
+                    format = WriterFormat.XML;
+                }
                 else
                 {
                     fileName += ".xlsx";
