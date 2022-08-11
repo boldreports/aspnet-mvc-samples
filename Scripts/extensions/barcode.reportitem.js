@@ -105,6 +105,7 @@ var EJBarcode = (function () {
         }
     };
     EJBarcode.prototype.getPropertyGridItems = function () {
+        var barCodeType = this.getPropertyVal('BarcodeType');
         var propertyItems = {
             'HeaderText': this.customJSON.Name,
             'PropertyType': 'barcode',
@@ -119,12 +120,26 @@ var EJBarcode = (function () {
                             'ItemId': 'barcodetype',
                             'Name': 'BarcodeType',
                             'DisplayName': this.getLocale('BarcodeType'),
-                            'Value': this.getPropertyVal('BarcodeType'),
+                            'Value': barCodeType,
                             'ItemType': 'DropDown',
                             'EnableExpression': false,
                             'ValueList': ['Code39', 'Code39Extended', 'Code11', 'Codabar', 'Code93', 'Code128A', 'Code128B',
-                                'Code128C', 'UpcBarcode', 'EAN-13', 'EAN-8', 'Code39 Mod 43', 'Interleaved 2 of 5',
-                                'Standard 2 of 5', 'Pharmacode']
+                                'Code128C', 'GS1-128', 'UpcBarcode', 'EAN-13', 'EAN-8', 'Code39 Mod 43', 'Interleaved 2 of 5',
+                                'Standard 2 of 5', 'Pharmacode'],
+                            DependentItems: [
+                                {
+                                    EnableItems: ['basicsettings_displaybarcodetext'],
+                                    DisableItems: [],
+                                    Value: ['Code39', 'Code39Extended', 'Code11', 'Codabar', 'Code93', 'Code128A', 'Code128B',
+                                        'Code128C', 'UpcBarcode', 'EAN-13', 'EAN-8', 'Code39 Mod 43', 'Interleaved 2 of 5',
+                                        'Standard 2 of 5', 'Pharmacode']
+                                },
+                                {
+                                    EnableItems: [],
+                                    DisableItems: ['basicsettings_displaybarcodetext'],
+                                    Value: ['GS1-128']
+                                }
+                            ]
                         },
                         {
                             'ItemId': 'barcodevalue',
@@ -140,7 +155,8 @@ var EJBarcode = (function () {
                             'DisplayName': this.getLocale('displayText'),
                             'Value': this.isDisplayText() ? true : false,
                             'ItemType': 'Bool',
-                            'EnableExpression': false
+                            'EnableExpression': false,
+                            'ParentId': 'basicsettings_barcodetype',
                         }
                     ]
                 }
@@ -234,7 +250,7 @@ var EJBarcode = (function () {
             this.errMsgDiv.css('display', 'none');
             this.customItemDiv.css({
                 'background-image': 'url(data:image/BMP;base64,' + args.data + ')',
-                'background-size': 'auto 100%',
+                'background-size': '100% 100%',
                 'background-repeat': 'no-repeat',
                 'background-position': 'left top'
             });

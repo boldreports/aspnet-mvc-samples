@@ -13,7 +13,7 @@ var EJQRBarcode = (function () {
         args.defaultHeight = 160;
         args.defaultWidth = 160;
         args.minimumHeight = 15;
-        args.minimumWidth = 90;
+        args.minimumWidth = 15;
         args.renderCallback = $.proxy(this.renderData, this);
         args.loadingCallback = $.proxy(this.showIndicator, this);
     };
@@ -123,19 +123,7 @@ var EJQRBarcode = (function () {
                             'Value': this.getBarcodeType(this.getPropertyVal('BarcodeType')),
                             'ItemType': 'DropDown',
                             'EnableExpression': false,
-                            'ValueList': ['QR Barcode', 'Data Matrix', 'PDF417'],
-                            'DependentItems': [
-                                {
-                                    EnableItems: ['basicsettings_displaybarcodetext'],
-                                    DisableItems: [],
-                                    Value: ['QR Barcode']
-                                },
-                                {
-                                    EnableItems: [],
-                                    DisableItems: ['basicsettings_displaybarcodetext'],
-                                    Value: ['Data Matrix', 'PDF417']
-                                }
-                            ]
+                            'ValueList': ['QR Barcode', 'Data Matrix', 'PDF417']
                         },
                         {
                             'ItemId': 'barcodevalue',
@@ -152,7 +140,7 @@ var EJQRBarcode = (function () {
                             'Value': this.isDisplayText() ? true : false,
                             'ItemType': 'Bool',
                             'EnableExpression': false,
-                            'ParentId': 'basicsettings_barcodetype'
+                            'IsVisible': false
                         }
                     ]
                 }
@@ -262,7 +250,7 @@ var EJQRBarcode = (function () {
             this.errMsgDiv.css('display', 'none');
             this.customItemDiv.css({
                 'background-image': 'url(data:image/BMP;base64,' + args.data + ')',
-                'background-size': 'auto 100%',
+                'background-size': '100% 100%',
                 'background-repeat': 'no-repeat',
                 'background-position': 'left top'
             });
