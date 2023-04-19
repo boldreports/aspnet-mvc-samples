@@ -13,6 +13,7 @@ namespace ReportsMVCSamples.Controllers
         public ActionResult Index()
         {
             ViewBag.action = "Preview";
+            ViewBag.isDesigner = true;
             updateMetaData("RDL");
             return View();
         }
@@ -20,6 +21,7 @@ namespace ReportsMVCSamples.Controllers
         public ActionResult RDLC()
         {
             ViewBag.action = "Preview";
+            ViewBag.isDesigner = true;
             updateMetaData("RDLC");
             return View("~/Views/RDLC/Index.cshtml");
         }
