@@ -20,6 +20,7 @@ namespace ReportsMVCSamples
     {
         protected void Application_Start()
         {
+            System.Web.Helpers.AntiForgeryConfig.UniqueClaimTypeIdentifier = System.Security.Claims.ClaimTypes.NameIdentifier;
             string License = File.ReadAllText(Server.MapPath("BoldLicense.txt"), Encoding.UTF8);
             log4net.GlobalContext.Properties["LogPath"] = this.GetAppDataFolderPath();
             BoldReports.Base.Logger.LogExtension.RegisterLog4NetConfig();
@@ -34,6 +35,7 @@ namespace ReportsMVCSamples
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
         }
         private List<string> GetDataExtension()
         {

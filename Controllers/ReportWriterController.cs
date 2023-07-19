@@ -31,6 +31,7 @@ namespace ReportsMVCSamples.Controllers.ReportViewer
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public void generate(string reportName, string type)
         {
             try
