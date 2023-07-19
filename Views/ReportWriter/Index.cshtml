@@ -1,5 +1,8 @@
-﻿@section control {
-    <form action="~/ReportWriter/generate" class="r-w-form" id="reportform" method="post">
+﻿
+@section control {
+    @using (Html.BeginForm("generate", "ReportWriter", FormMethod.Post)){
+    @Html.AntiForgeryToken();
+    <form action="~/ReportWriter/generate" id="reportform" method="post">
         <div class="r-w-container">
             <div class="r-w-sample-container">
                 <div class="r-w-samples">
@@ -79,6 +82,7 @@
             });
         });
     </script>
+    }
 }
 
 @section description {

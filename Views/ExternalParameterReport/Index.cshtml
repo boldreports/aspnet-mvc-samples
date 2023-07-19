@@ -1,4 +1,6 @@
-﻿@section control {
+﻿@using (Html.BeginForm()){
+    @Html.AntiForgeryToken();
+@section control {
 <form>
     <div class="r-w-container">
         <div class="r-w-sample-container">
@@ -147,4 +149,5 @@
             target="_blank">documentation</a> section.
     </p>
 </div>
+}
 }

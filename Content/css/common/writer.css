@@ -1,10 +1,11 @@
 ﻿/* form*/
-.r-w-form {
+.tab-content .tab-pane ej-sample form{
     display: inherit;
     overflow: inherit;
     height: 100%;
-    width: 100%;
+	width: 100%;
 }
+
 
 /* container*/
 .r-w-container {
