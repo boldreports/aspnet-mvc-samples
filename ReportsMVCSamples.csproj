@@ -284,8 +284,6 @@
     <Content Include="Content\assets\sidebar\landscape.png" />
     <Content Include="Content\assets\sidebar\portrait.png" />
     <Content Include="Content\assets\footer\bg-texture.png" />
-    <Content Include="Content\css\bold-reports\bold.reportdesigner.core.material.min.css" />
-    <Content Include="Content\css\bold-reports\bold.widgets.core.material.min.css" />
     <Content Include="Content\css\bold-reports\common-images\ejicons.svg" />
     <Content Include="Content\css\bold-reports\common-images\grid\dropPointer.cur" />
     <Content Include="Content\css\bold-reports\common-images\lighttheme\colorpicker_light.png" />
@@ -408,23 +406,8 @@
     <Content Include="Content\css\bold-reports\common-images\reportviewer\up.png" />
     <Content Include="Content\css\bold-reports\common-images\reportviewer\updown.png" />
     <Content Include="Content\css\bold-reports\common-images\treeview\drop-sibling-rtl.png" />
-    <Content Include="Content\css\bold-reports\material\bold.reportdesigner.compatibility.min.css" />
-    <Content Include="Content\css\bold-reports\material\bold.reportdesigner.min.css" />
-    <Content Include="Content\css\bold-reports\material\bold.reportdesigner.theme.compatibility.min.css" />
-    <Content Include="Content\css\bold-reports\material\bold.reportdesigner.theme.min.css" />
-    <Content Include="Content\css\bold-reports\material\bold.reports.all.compatibility.min.css" />
-    <Content Include="Content\css\bold-reports\material\bold.theme.compatibility.min.css" />
-    <Content Include="Content\css\bold-reports\material\bold.theme.min.css" />
     <Content Include="Content\css\bold-reports\v2.0\tailwind-light\bold.report-designer.min.css" />
     <Content Include="Content\css\bold-reports\v2.0\tailwind-light\bold.report-viewer.min.css" />
-    <Content Include="Content\css\bold-reports\material\icons\ejicons.svg" />
-    <Content Include="Content\css\bold-reports\material\images\ajax-loader.gif" />
-    <Content Include="Content\css\bold-reports\material\images\checkedtick.png" />
-    <Content Include="Content\css\bold-reports\material\images\drop-sibling.png" />
-    <Content Include="Content\css\bold-reports\material\images\rating-star.png" />
-    <Content Include="Content\css\bold-reports\material\images\rotator-icon.png" />
-    <Content Include="Content\css\bold-reports\material\images\slider-tick.png" />
-    <Content Include="Content\css\bold-reports\material\images\waitingpopup.gif" />
     <Content Include="Content\css\common\common.css" />
     <Content Include="Content\css\common\header.css" />
     <Content Include="Content\css\common\index.css" />
@@ -442,8 +425,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Resources\Report\NorthwindIO_Reports.sdf" />
-    <Content Include="Scripts\bold-reports\bold.report-designer.min.js" />
-    <Content Include="Scripts\bold-reports\bold.report-viewer.min.js" />
     <Content Include="Scripts\bold-reports\v2.0\common\bold.reports.common.min.js" />
     <Content Include="Scripts\bold-reports\v2.0\common\bold.reports.widgets.min.js" />
     <Content Include="Scripts\bold-reports\v2.0\bold.report-designer.min.js" />
@@ -650,9 +631,6 @@
     <Content Include="Content\css\bold-reports\common-images\reportviewer\ej-reportviewericons.eot" />
     <Content Include="Content\css\bold-reports\common-images\reportviewer\ej-reportviewericons.ttf" />
     <Content Include="Content\css\bold-reports\common-images\reportviewer\ej-reportviewericons.woff" />
-    <Content Include="Content\css\bold-reports\material\icons\ejicons.eot" />
-    <Content Include="Content\css\bold-reports\material\icons\ejicons.ttf" />
-    <Content Include="Content\css\bold-reports\material\icons\ejicons.woff" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
