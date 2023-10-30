@@ -1,19 +1,42 @@
 ﻿function onToolbarRendering() {
-    this.model.toolbarSettings.customGroups = [{
-        items: [{
-            type: 'Default',
-            cssClass: "e-icon e-edit e-reportviewer-icon ej-webicon CustomGroup",
-            id: "edit-report",
-            // Need to add the proper header and content once, the tool tip issue resolved.
-            tooltip: {
-                header: 'Edit Report',
-                content: 'Edit this report in designer'
-            }
-        }],
-        // Need to remove the css (e-reportviewer-toolbarcontainer ul.e-ul:nth-child(4)) once the group index issue resolved
-        groupIndex: 3,
-        cssClass: "e-show"
-    }]
+    if (this.element[0].baseURI.lastIndexOf('LoadLargeData') != -1) {
+        this.model.toolbarSettings.customGroups = [{
+            groupIndex: 3,
+            Index: 1,
+            items: [{
+                type: 'Default',
+                cssClass: "e-icon e-edit e-reportviewer-icon ej-webicon CustomGroup",
+                prefixIcon: "e-viewer-icons edit",
+                id: "edit-report",
+                // Need to add the proper header and content once, the tool tip issue resolved.
+                tooltip: {
+                    header: 'Edit Report',
+                    content: 'Edit this report in designer'
+                }
+            }],
+            // Need to remove the css (e-reportviewer-toolbarcontainer ul.e-ul:nth-child(4)) once the group index issue resolved
+            cssClass: "e-show"
+        }];
+        this.model.toolbarSettings.toolbars = ej.ReportViewer.Toolbars.All & ~ej.ReportViewer.Toolbars.Vertical;
+        this.model.toolbarSettings.items = ej.ReportViewer.ToolbarItems.All & ~ej.ReportViewer.ToolbarItems.Export & ~ej.ReportViewer.ToolbarItems.Print;
+    } else {
+        this.model.toolbarSettings.items = ej.ReportViewer.ToolbarItems.All & ~ej.ReportViewer.ToolbarItems.Find;
+        this.model.toolbarSettings.customGroups = [{
+            items: [{
+                type: 'Default',
+                cssClass: "e-icon e-edit e-reportviewer-icon ej-webicon CustomGroup",
+                prefixIcon: "e-viewer-icons edit",
+                id: "edit-report",
+                // Need to add the proper header and content once, the tool tip issue resolved.
+                tooltip: {
+                    header: 'Edit Report',
+                    content: 'Edit this report in designer'
+                }
+            }],
+            // Need to remove the css (e-reportviewer-toolbarcontainer ul.e-ul:nth-child(4)) once the group index issue resolved
+            cssClass: "e-show"
+        }]
+    }
 }
 
 let destroyReport = true;
@@ -24,13 +47,13 @@ function onExportItemClick() {
 
 function onToolBarItemClick(args) {
     if (args.value === 'edit-report') {
-        let reportPath = this.element[0].baseURI.lastIndexOf('ExternalParameterReport') !== -1 ? 'external-parameter-report' : this.element[0].baseURI.lastIndexOf('ParameterCustomization') !== -1 ? 'parameter-customization': args.model.reportPath;
+        let reportPath = this.element[0].baseURI.lastIndexOf('ExternalParameterReport') !== -1 ? 'external-parameter-report' : this.element[0].baseURI.lastIndexOf('ParameterCustomization') !== -1 ? 'parameter-customization' : args.model.reportPath;
         let ReportDesignerPath = reportPath.indexOf('.rdlc') !== -1 ? 'ReportDesigner/RDLC' : 'ReportDesigner';
         window.open(location.origin + getBasePath() + ReportDesignerPath + '?report-name=' + reportPath, location.pathname.indexOf('Preview') === -1 ? '_blank' : '_self')
     }
 }
 
-window.addEventListener("beforeunload", function () {
+window.addEventListener("beforeunload", function() {
     if (destroyReport) {
         destroyReportControls();
     } else {

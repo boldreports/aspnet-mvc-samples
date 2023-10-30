@@ -70,7 +70,7 @@ namespace ReportsMVCSamples.Controllers
         public void updateDesignerMetaData(dynamic sampleData)
         {
             string title = String.IsNullOrEmpty((string)sampleData.metaData.title) ? sampleData.sampleName : sampleData.metaData.title;
-            string metaContent = "The ASP.NET MVC bold report designer allows the end-users to arrange/customize the reports appearance in browsers." +
+            string metaContent = "The ASP.NET MVC Bold Report Designer allows the end-users to arrange/customize the reports appearance in browsers." +
                         "It helps to edit the " + title + " for customer\"s application needs.";
             title += " | ASP.NET MVC Report Designer";
             ViewBag.Title = title.Length < 45 ? title += " | Bold Reports" : title;

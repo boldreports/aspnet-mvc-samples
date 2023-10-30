@@ -138,3 +138,7 @@
         transform: scale(1);
     }
 }
+
+#reportdesigner_reportName {
+    visibility: hidden;
+}

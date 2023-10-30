@@ -50,32 +50,32 @@
       <HintPath>packages\BarcodeLib.1.3.0.0\lib\net20\BarcodeLib.dll</HintPath>
     </Reference>
     <Reference Include="Bold.Licensing">
-      <HintPath>packages\Bold.Licensing.5.2.26\lib\net45\Bold.Licensing.dll</HintPath>
+      <HintPath>packages\Bold.Licensing.5.3.8\lib\net45\Bold.Licensing.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="BoldReports.Data.WebData">
-      <HintPath>packages\BoldReports.Data.WebData.5.2.26\lib\net45\BoldReports.Data.WebData.dll</HintPath>
+      <HintPath>packages\BoldReports.Data.WebData.5.3.8\lib\net45\BoldReports.Data.WebData.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Data.Csv">
-      <HintPath>packages\BoldReports.Data.Csv.5.2.26\lib\net45\BoldReports.Data.Csv.dll</HintPath>
+      <HintPath>packages\BoldReports.Data.Csv.5.3.8\lib\net45\BoldReports.Data.Csv.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Data.Excel">
-      <HintPath>packages\BoldReports.Data.Excel.5.2.26\lib\net45\BoldReports.Data.Excel.dll</HintPath>
+      <HintPath>packages\BoldReports.Data.Excel.5.3.8\lib\net45\BoldReports.Data.Excel.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Data.SSAS">
-      <HintPath>packages\BoldReports.Data.SSAS.5.2.26\lib\net45\BoldReports.Data.SSAS.dll</HintPath>
+      <HintPath>packages\BoldReports.Data.SSAS.5.3.8\lib\net45\BoldReports.Data.SSAS.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Data.ElasticSearch">
-      <HintPath>packages\BoldReports.Data.ElasticSearch.5.2.26\lib\net45\BoldReports.Data.ElasticSearch.dll</HintPath>
+      <HintPath>packages\BoldReports.Data.ElasticSearch.5.3.8\lib\net45\BoldReports.Data.ElasticSearch.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.CRI.Barcode">
-      <HintPath>packages\BoldReports.CRI.Barcode.5.2.26\lib\net45\BoldReports.CRI.Barcode.dll</HintPath>
+      <HintPath>packages\BoldReports.CRI.Barcode.5.3.8\lib\net45\BoldReports.CRI.Barcode.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Mvc">
-      <HintPath>packages\BoldReports.Mvc5.5.2.26\lib\net45\BoldReports.Mvc.dll</HintPath>
+      <HintPath>packages\BoldReports.Mvc5.5.3.8\lib\net45\BoldReports.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Web">
-      <HintPath>packages\BoldReports.Web.5.2.26\lib\net45\BoldReports.Web.dll</HintPath>
+      <HintPath>packages\BoldReports.Web.5.3.8\lib\net45\BoldReports.Web.dll</HintPath>
     </Reference>
     <Reference Include="KBCsv, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc96fa93a217f7a1, processorArchitecture=MSIL">
       <HintPath>packages\KBCsv.5.0.0\lib\netstandard1.0\KBCsv.dll</HintPath>
@@ -85,7 +85,7 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0">
-      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AnalysisServices.AdomdClient">
       <HintPath>packages\Microsoft.AnalysisServices.AdomdClient.retail.amd64.19.4.0.2\lib\net45\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
@@ -112,7 +112,7 @@
       <HintPath>packages\Syncfusion.Presentation.AspNet.20.2.0.36\lib\net45\Syncfusion.Presentation.Base.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Base.Logger">
-      <HintPath>packages\BoldReports.Base.Logger.5.2.26\lib\net45\BoldReports.Base.Logger.dll</HintPath>
+      <HintPath>packages\BoldReports.Base.Logger.5.3.8\lib\net45\BoldReports.Base.Logger.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfBarcode.WPF">
       <HintPath>packages\Syncfusion.SfBarcode.WPF.20.2.0.36\lib\net45\Syncfusion.SfBarcode.WPF.dll</HintPath>
@@ -189,13 +189,13 @@
       <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Data.MySQL">
-      <HintPath>packages\BoldReports.Data.MySQL.5.2.26\lib\net45\BoldReports.Data.MySQL.dll</HintPath>
+      <HintPath>packages\BoldReports.Data.MySQL.5.3.8\lib\net45\BoldReports.Data.MySQL.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Data.Oracle">
-      <HintPath>packages\BoldReports.Data.Oracle.5.2.26\lib\net45\BoldReports.Data.Oracle.dll</HintPath>
+      <HintPath>packages\BoldReports.Data.Oracle.5.3.8\lib\net45\BoldReports.Data.Oracle.dll</HintPath>
     </Reference>
     <Reference Include="BoldReports.Data.PostgreSQL">
-      <HintPath>packages\BoldReports.Data.PostgreSQL.5.2.26\lib\net45\BoldReports.Data.PostgreSQL.dll</HintPath>
+      <HintPath>packages\BoldReports.Data.PostgreSQL.5.3.8\lib\net45\BoldReports.Data.PostgreSQL.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -264,6 +264,7 @@
     <Compile Include="Controllers\ReportWriterController.cs" />
     <Compile Include="Controllers\ReportViewer\SalesOrderDetailController.cs" />
     <Compile Include="Controllers\ReportViewer\SalesReportController.cs" />
+    <Compile Include="Controllers\ReportViewer\SubReportController.cs" />
     <Compile Include="Controllers\ReportViewer\TerritorySalesController.cs" />
     <Compile Include="Controllers\ReportViewer\TicketsSalesAnalysisController.cs" />
     <Compile Include="Controllers\ReportViewer\WebsiteVisitorAnalysisController.cs" />
@@ -309,44 +310,89 @@
     <Content Include="Content\css\bold-reports\common-images\maps\Zoom-out.png" />
     <Content Include="Content\css\bold-reports\common-images\maps\Zoom-out_hover.png" />
     <Content Include="Content\css\bold-reports\common-images\materialtheme\colorpicker_light_material.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\amazon-rds.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\amazon-redshift.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\aws.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\azure-sqldw.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\cdata.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\csv.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\default-extension.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\elastic-search.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\excel.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\google-big-query.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\google-cloud.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\json.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\mariadb.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\memsql.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\mysql.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\odata.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\odbc.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\oledb.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\oracle.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\postgre-sql.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\shared.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\snowflake.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\sql.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\ssas.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\vertica.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\web-api.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\light-theme\xml.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\Dataset.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\Datasource.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\DefaultImage.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\DragTable.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\ejreportdesigner.svg" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\Image.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\MoveIcon.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\Nodata.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\Parameter.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\resizeicon.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\SettingIcon.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\amazon-rds.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\amazon-redshift.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\aws.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\azure-sqldw.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\cdata.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\csv.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\default-extension.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\elastic-search.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\excel.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\google-big-query.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\google-cloud.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\json.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\mariadb.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\memsql.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\mysql.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\odata.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\odbc.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\oledb.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\oracle.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\postgre-sql.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\shared.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\snowflake.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\sql.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\ssas.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\vertica.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\web-api.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\xml.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\100-stacked-column.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\100-stacked.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\100-stackedbar.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\area.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\bar.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\bubbles.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\candle-stick.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\column.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\custom-widget.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\data-bar.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\doughnut.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\error-bar.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\exploded-pie.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\funnel.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\image.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\indicator.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\line-with-markers.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\line.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\line2.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\linear-gauge.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\list-box.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\map.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\matrix.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\pie.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\polar.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\pramid.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\radar.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\radial-gauge.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\range-area.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\range-bar.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\range-column.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\rectangle.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\scatter.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\smooth-area.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\smooth-line.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\smooth-range-area.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\smoothline-with-markers.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\sparkline.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\stacked-area.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\stacked-bar.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\stacked-column.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\stepped-line.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\stock-range.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\subreport.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\table.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\widget-icons\text.svg" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\dataset.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\Datasource.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\defaultImage.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\dragtable.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\image.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\moveicon.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\nodata.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\parameter.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\resizeicon.png" />
+    <Content Include="Content\css\bold-reports\v2.0\common-images\settingicon.png" />
     <Content Include="Content\css\bold-reports\common-images\reportviewer\alertIcon.svg" />
     <Content Include="Content\css\bold-reports\common-images\reportviewer\collapse.svg" />
     <Content Include="Content\css\bold-reports\common-images\reportviewer\down.png" />
@@ -367,9 +413,10 @@
     <Content Include="Content\css\bold-reports\material\bold.reportdesigner.theme.compatibility.min.css" />
     <Content Include="Content\css\bold-reports\material\bold.reportdesigner.theme.min.css" />
     <Content Include="Content\css\bold-reports\material\bold.reports.all.compatibility.min.css" />
-    <Content Include="Content\css\bold-reports\material\bold.reports.all.min.css" />
     <Content Include="Content\css\bold-reports\material\bold.theme.compatibility.min.css" />
     <Content Include="Content\css\bold-reports\material\bold.theme.min.css" />
+    <Content Include="Content\css\bold-reports\v2.0\tailwind-light\bold.report-designer.min.css" />
+    <Content Include="Content\css\bold-reports\v2.0\tailwind-light\bold.report-viewer.min.css" />
     <Content Include="Content\css\bold-reports\material\icons\ejicons.svg" />
     <Content Include="Content\css\bold-reports\material\images\ajax-loader.gif" />
     <Content Include="Content\css\bold-reports\material\images\checkedtick.png" />
@@ -378,7 +425,6 @@
     <Content Include="Content\css\bold-reports\material\images\rotator-icon.png" />
     <Content Include="Content\css\bold-reports\material\images\slider-tick.png" />
     <Content Include="Content\css\bold-reports\material\images\waitingpopup.gif" />
-    <Content Include="Content\css\ej2\ej2-buttons.min.css" />
     <Content Include="Content\css\common\common.css" />
     <Content Include="Content\css\common\header.css" />
     <Content Include="Content\css\common\index.css" />
@@ -391,27 +437,17 @@
     <Content Include="Content\css\dependent\prism.css" />
     <Content Include="Content\css\dependent\show-hint.css" />
     <Content Include="Content\extensions\barcode.reportitem.css" />
-    <Content Include="Content\extensions\images\barcode.png" />
-    <Content Include="Content\extensions\images\qrbarcode.png" />
+    <Content Include="Content\extensions\images\barcode.svg" />
+    <Content Include="Content\extensions\images\qrbarcode.svg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Resources\Report\NorthwindIO_Reports.sdf" />
     <Content Include="Scripts\bold-reports\bold.report-designer.min.js" />
     <Content Include="Scripts\bold-reports\bold.report-viewer.min.js" />
-    <Content Include="Scripts\bold-reports\common\bold.report-designer-widgets.min.js" />
-    <Content Include="Scripts\bold-reports\common\bold.reports.common.min.js" />
-    <Content Include="Scripts\bold-reports\common\bold.reports.widgets.min.js" />
-    <Content Include="Scripts\bold-reports\common\ej.unobtrusive.min.js" />
-    <Content Include="Scripts\bold-reports\common\ej2-base.min.js" />
-    <Content Include="Scripts\bold-reports\common\ej2-data.min.js" />
-    <Content Include="Scripts\bold-reports\common\ej2-pdf-export.min.js" />
-    <Content Include="Scripts\bold-reports\common\ej2-svg-base.min.js" />
-    <Content Include="Scripts\bold-reports\data-visualization\ej.bulletgraph.min.js" />
-    <Content Include="Scripts\bold-reports\data-visualization\ej.chart.min.js" />
-    <Content Include="Scripts\bold-reports\data-visualization\ej2-circulargauge.min.js" />
-    <Content Include="Scripts\bold-reports\data-visualization\ej2-lineargauge.min.js" />
-    <Content Include="Scripts\bold-reports\data-visualization\ej2-maps.min.js" />
-    <Content Include="Scripts\ej2\ej2-buttons.min.js" />
+    <Content Include="Scripts\bold-reports\v2.0\common\bold.reports.common.min.js" />
+    <Content Include="Scripts\bold-reports\v2.0\common\bold.reports.widgets.min.js" />
+    <Content Include="Scripts\bold-reports\v2.0\bold.report-designer.min.js" />
+    <Content Include="Scripts\bold-reports\v2.0\bold.report-viewer.min.js" />
     <Content Include="Scripts\common\global.js" />
     <Content Include="Scripts\common\header.js" />
     <Content Include="Scripts\common\index.js" />
@@ -573,6 +609,7 @@
     <Content Include="Views\ReportDesigner\Index.cshtml" />
     <Content Include="Views\SalesOrderDetail\Index.cshtml" />
     <Content Include="Views\SalesReport\Index.cshtml" />
+    <Content Include="Views\SubReport\Index.cshtml" />
     <Content Include="Views\Shared\Preview\_index.cshtml" />
     <Content Include="Views\Shared\_header.cshtml" />
     <Content Include="Views\Shared\_index.cshtml" />
@@ -628,6 +665,7 @@
     <Content Include="Resources\DataSet\PatientDetails.rsd" />
     <Content Include="Resources\DataSource\Northwind.rds" />
     <Content Include="Resources\DataSource\ReportSampleDatabase.rds" />
+    <Content Include="Resources\DataSource\AdventureWorks.rds" />
     <Content Include="Resources\Report\barcode.rdl" />
     <Content Include="Resources\Report\company-sales.rdl" />
     <Content Include="Resources\Report\data-bar.rdl" />
@@ -636,6 +674,8 @@
     <Content Include="Resources\Report\customer-support-representative-analysis.rdl" />
     <Content Include="Resources\Report\grouping-aggregate.rdl" />
     <Content Include="Resources\Report\invoice.rdl" />
+    <Content Include="Resources\Report\sub-report.rdl" />
+    <Content Include="Resources\Report\sub-report-child.rdl" />
     <Content Include="Resources\Report\mail-merge.rdl" />
     <Content Include="Resources\Report\northwind-products-suppliers-report.rdl" />
     <Content Include="Resources\Report\patient-experience-analysis.rdl" />
@@ -656,7 +696,7 @@
     <Content Include="Views\SalesByYear\Index.cshtml" />
     <Content Include="Resources\Report\sales-by-year.rdlc" />
     <Content Include="Views\LoadLargeData\Index.cshtml" />
-    <Content Include="Resources\Report\load-large-data.rdlc" />
+    <Content Include="Resources\Report\load-large-data.rdl" />
     <Content Include="Views\ConsolidatedBalanceSheet\index.cshtml" />
     <Content Include="Resources\Report\consolidated-balance-sheet.rdlc" />
     <Content Include="Resources\Report\paystub.rdlc" />
