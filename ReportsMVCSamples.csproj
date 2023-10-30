@@ -284,30 +284,6 @@
     <Content Include="Content\assets\sidebar\landscape.png" />
     <Content Include="Content\assets\sidebar\portrait.png" />
     <Content Include="Content\assets\footer\bg-texture.png" />
-    <Content Include="Content\css\bold-reports\common-images\ejicons.svg" />
-    <Content Include="Content\css\bold-reports\common-images\grid\dropPointer.cur" />
-    <Content Include="Content\css\bold-reports\common-images\lighttheme\colorpicker_light.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Arrow_Bootom.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Arrow_Bootom_hover.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Arrow_Left.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Arrow_Left_hover.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Arrow_Right.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Arrow_Right_hover.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Arrow_Top.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Arrow_Top_hover.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Bar.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Home.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Home_hover.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Home_hover_lime.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Home_hover_saffron.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Home_lime.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Home_saffron.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Navicatior.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Zoom-In.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Zoom-In_hover.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Zoom-out.png" />
-    <Content Include="Content\css\bold-reports\common-images\maps\Zoom-out_hover.png" />
-    <Content Include="Content\css\bold-reports\common-images\materialtheme\colorpicker_light_material.png" />
     <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\amazon-rds.png" />
     <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\amazon-redshift.png" />
     <Content Include="Content\css\bold-reports\v2.0\common-images\light-theme\aws.png" />
@@ -391,21 +367,6 @@
     <Content Include="Content\css\bold-reports\v2.0\common-images\parameter.png" />
     <Content Include="Content\css\bold-reports\v2.0\common-images\resizeicon.png" />
     <Content Include="Content\css\bold-reports\v2.0\common-images\settingicon.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\alertIcon.svg" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\collapse.svg" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\down.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\ej-reportviewericons.svg" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\errorIcon.svg" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\expand.svg" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\minus.gif" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\minus.jpg" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\minus.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\plus.gif" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\plus.jpg" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\plus.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\up.png" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\updown.png" />
-    <Content Include="Content\css\bold-reports\common-images\treeview\drop-sibling-rtl.png" />
     <Content Include="Content\css\bold-reports\v2.0\tailwind-light\bold.report-designer.min.css" />
     <Content Include="Content\css\bold-reports\v2.0\tailwind-light\bold.report-viewer.min.css" />
     <Content Include="Content\css\common\common.css" />
@@ -622,15 +583,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="log4net.config" />
-    <Content Include="Content\css\bold-reports\common-images\ejicons.eot" />
-    <Content Include="Content\css\bold-reports\common-images\ejicons.ttf" />
-    <Content Include="Content\css\bold-reports\common-images\ejicons.woff" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\ejreportdesigner.eot" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\ejreportdesigner.ttf" />
-    <Content Include="Content\css\bold-reports\common-images\reportdesigner\ejreportdesigner.woff" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\ej-reportviewericons.eot" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\ej-reportviewericons.ttf" />
-    <Content Include="Content\css\bold-reports\common-images\reportviewer\ej-reportviewericons.woff" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
