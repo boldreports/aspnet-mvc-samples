@@ -9,7 +9,6 @@ using BoldReports.Web;
 using BoldReports.Web.ReportViewer;
 using BoldReports.Base.Logger;
 using System.Data;
-using ReportsMVCSamples.Models;
 
 namespace ReportsMVCSamples.Controllers
 {
@@ -17,6 +16,17 @@ namespace ReportsMVCSamples.Controllers
     [RoutePrefix("")]
     public class ReportViewerWebApiController : ApiController, IReportController, IReportLogger
     {
+        internal ExternalServer Server { get; set; }
+        internal string ServerURL { get; set; }
+
+        public ReportViewerWebApiController()
+        {
+            ExternalServer externalServer = new ExternalServer();
+            this.Server = externalServer;
+            this.ServerURL = "Sample";
+            externalServer.ReportServerUrl = this.ServerURL;
+        }
+
         private string resourceRootLoc = "~/Resources/Report/";
         public object GetResource(string key, string resourcetype, bool isPrint)
         {
@@ -35,17 +45,14 @@ namespace ReportsMVCSamples.Controllers
 
         public void OnInitReportOptions(ReportViewerOptions reportOption)
         {
+            reportOption.ReportModel.ReportingServer = this.Server;
+            reportOption.ReportModel.ReportServerUrl = this.ServerURL;
             reportOption.ReportModel.EmbedImageData = true;
             string reportName = reportOption.ReportModel.ReportPath;
             string directoryName = Path.GetDirectoryName(reportName);
             if (directoryName.Length <= 0)
             {
                 reportOption.ReportModel.ReportPath = HttpContext.Current.Server.MapPath(resourceRootLoc + reportName);
-            }
-            if(reportName == "load-large-data.rdlc")
-            {
-                SqlQuery.getJson();
-                reportOption.ReportModel.DataSources.Add(new ReportDataSource("SalesOrderDetail", HttpContext.Current.Cache.Get("SalesOrderDetail") as DataTable));
             }
         }
 

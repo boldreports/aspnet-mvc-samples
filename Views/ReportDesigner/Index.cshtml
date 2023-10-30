@@ -1,9 +1,9 @@
 ﻿@section control {
-    @Html.Bold().ReportDesigner("reportdesigner").AjaxBeforeLoad("onAjaxBeforeLoad").ServiceUrl(ReportsMVCSamples.Models.Globals.DESIGNER_SERVICE_URL).Create("controlCreate").ToolbarRendering("toolbarRendering").ToolbarClick("toolbarClick").ToolbarSettings(tb => tb.Items(BoldReports.ReportDesignerEnums.ToolbarItems.All & ~BoldReports.ReportDesignerEnums.ToolbarItems.Save)).ReportItemExtensions(
+    @Html.Bold().ReportDesigner("reportdesigner").AjaxBeforeLoad("onAjaxBeforeLoad").ServiceUrl(ReportsMVCSamples.Models.Globals.DESIGNER_SERVICE_URL).Create("controlCreate").ToolbarRendering("toolbarRendering").ToolbarClick("toolbarClick").ToolbarSettings(tb => tb.Items(BoldReports.ReportDesignerEnums.ToolbarItems.All & ~BoldReports.ReportDesignerEnums.ToolbarItems.Save & ~BoldReports.ReportDesignerEnums.ToolbarItems.Open)).ReportItemExtensions(
         ext => {
             ext.ClassName("EJBarcode").Name("barcode").ImageClass("customitem-barcode").DisplayName("1D Barcode").Category("Barcodes").Add();
             ext.ClassName("EJQRBarcode").Name("matrixbarcode").ImageClass("customitem-qrbarcode").DisplayName("2D Barcode").Category("Barcodes").Add();
-         })
+         }).PermissionSettings(ps => ps.DataSource(BoldReports.ReportDesignerEnums.Permission.All & ~BoldReports.ReportDesignerEnums.Permission.Create))
 
     <script>
         let designerInst;
@@ -12,11 +12,24 @@
             let reportName = getReportName();
             designerInst.setModel({
                 previewOptions: {
-                    exportItemClick: "onExportItemClick"
+                    exportItemClick: "onExportItemClick",
+                    toolbarSettings: {
+                        items: ej.ReportViewer.ToolbarItems.All & ~ej.ReportViewer.ToolbarItems.Find 
+                    }
                 }
             });
             if (reportName) {
                  designerInst.openReport(reportName.indexOf("external-parameter-report") !== -1 ? "product-line-sales.rdl" : reportName.indexOf("parameter-customization") !== -1 ? "product-line-sales.rdl" : reportName);
+            }
+            if (reportName == "load-large-data.rdl") {
+                designerInst.setModel({
+                    previewOptions: {
+                        toolbarSettings: {
+                            items: ej.ReportViewer.ToolbarItems.All & ~ej.ReportViewer.ToolbarItems.Export & ~ej.ReportViewer.ToolbarItems.Print,
+                            toolbars:  ej.ReportViewer.Toolbars.All & ~ej.ReportViewer.Toolbars.Vertical
+                        }
+                    }
+                });
             }
         }
 

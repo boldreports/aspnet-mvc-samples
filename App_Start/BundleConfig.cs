@@ -36,11 +36,9 @@ namespace ReportsMVCSamples
                       "~/Scripts/dependent/bootstrap.min.js",
 
                       //bold-reports
-                      "~/Scripts/bold-reports/common/bold.reports.common.min.js",
-                      "~/Scripts/bold-reports/common/bold.reports.widgets.min.js",
-                      "~/Scripts/bold-reports/bold.report-viewer.min.js",
-                      "~/Scripts/bold-reports/data-visualization/ej.bulletgraph.min.js",
-                      "~/Scripts/bold-reports/data-visualization/ej.chart.min.js"));
+                      "~/Scripts/bold-reports/v2.0/common/bold.reports.common.min.js",
+                      "~/Scripts/bold-reports/v2.0/common/bold.reports.widgets.min.js",
+                      "~/Scripts/bold-reports/v2.0/bold.report-viewer.min.js"));
 
             //App scripts for SB main samples
             bundles.Add(new ScriptBundle("~/bundles/main/app").Include(
@@ -62,8 +60,6 @@ namespace ReportsMVCSamples
                     .Include("~/Content/css/common/sidebar.css", new CssUrlTransformWrapper())
                     .Include("~/Content/css/common/writer.css", new CssUrlTransformWrapper())
                     .Include("~/Content/css/common/index.css", new CssUrlTransformWrapper())
-                    .Include("~/Content/css/bold-reports/bold.widgets.core.material.min.css", new CssUrlTransformWrapper())
-                    .Include("~/Content/css/bold-reports/material/bold.theme.min.css", new CssUrlTransformWrapper())
             );
 
             //vendor scripts for SB preview samples
@@ -79,15 +75,13 @@ namespace ReportsMVCSamples
                       "~/Scripts/dependent/vb.js",
 
                       //bold-reports
-                      "~/Scripts/bold-reports/common/bold.reports.common.min.js",
-                      "~/Scripts/bold-reports/common/bold.reports.widgets.min.js",
-                      "~/Scripts/bold-reports/bold.report-viewer.min.js",
-                      "~/Scripts/bold-reports/common/bold.report-designer-widgets.min.js",
-                      "~/Scripts/bold-reports/bold.report-designer.min.js",
+                      "~/Scripts/bold-reports/v2.0/common/bold.reports.common.min.js",
+                      "~/Scripts/bold-reports/v2.0/common/bold.reports.widgets.min.js",
+                      "~/Scripts/bold-reports/v2.0/bold.report-viewer.min.js",
+                      "~/Scripts/bold-reports/v2.0/bold.report-designer.min.js",
                       "~/Scripts/extensions/barcode.reportitem.js",
-                      "~/Scripts/extensions/qrbarcode.reportitem.js",
-                      "~/Scripts/bold-reports/data-visualization/ej.bulletgraph.min.js",
-                      "~/Scripts/bold-reports/data-visualization/ej.chart.min.js"));
+                      "~/Scripts/extensions/qrbarcode.reportitem.js"
+                       ));
 
             //App scripts for SB preview samples
             bundles.Add(new ScriptBundle("~/bundles/preview/app").Include(
@@ -103,11 +97,11 @@ namespace ReportsMVCSamples
                    .Include("~/Content/css/common/common.css")
                    .Include("~/Content/css/common/writer.css", new CssUrlTransformWrapper())
                    .Include("~/Content/css/common/preview.css")
-                   .Include("~/Content/css/bold-reports/bold.widgets.core.material.min.css", new CssUrlTransformWrapper())
-                   .Include("~/Content/css/bold-reports/material/bold.theme.min.css", new CssUrlTransformWrapper())
-                   .Include("~/Content/css/bold-reports/bold.reportdesigner.core.material.min.css", new CssUrlTransformWrapper())
-                   .Include("~/Content/css/bold-reports/material/bold.reportdesigner.theme.min.css", new CssUrlTransformWrapper())
                    .Include("~/Content/extensions/barcode.reportitem.css", new CssUrlTransformWrapper()));
+            foreach (var bundle in BundleTable.Bundles)
+            {
+                bundle.Transforms.Clear();
+            }
         }
 
     }
