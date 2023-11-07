@@ -15,7 +15,7 @@ This section guides you to use the Bold Reports ASP.NET MVC samples in your appl
 
 The samples requires the below requirements to run.
 
-* [Visual Studio 2015/2017](https://visualstudio.microsoft.com/downloads/)
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
 * .Net Framework 4.5 and above
 
 ## Using the Reporting Samples
