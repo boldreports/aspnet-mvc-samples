@@ -108,6 +108,15 @@
     #ReportViewer_param_block_table .e-reportviewer-label {
         padding-top: 5px;
     }
+
+    #external-container .r-w-property-container .r-w-property {
+        margin-right: 20px;
+    }
+
+    #external-container .r-w-property-container .r-w-property .r-w-property-value {
+        margin-top: -4px;
+    }
+    
     @media only screen and (max-width: 1080px) {
 
         #r-w-property-value-subcategory{

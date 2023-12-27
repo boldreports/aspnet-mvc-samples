@@ -18,6 +18,12 @@ The samples requires the below requirements to run.
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
 * .Net Framework 4.5 and above
 
+In order to download samples in the Report Writer Properly , run the below mwntioned command.
+
+```cmd
+npm install
+```
+
 ## Using the Reporting Samples
 
 * Open the solution file `ReportsMVCSamples.sln` in Visual Studio.
