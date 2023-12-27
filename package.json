@@ -4,7 +4,7 @@
   "author": "Syncfusion",
   "license": "Syncfusion",
   "scripts": {
-    "postinstall": "gulp Puppeteer-download"
+    "postinstall": "gulp puppeteer-download"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
