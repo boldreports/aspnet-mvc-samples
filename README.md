@@ -39,7 +39,7 @@ Package | Purpose
 
 ## Online Demos
 
-Take a look at the Bold Reporting ASP.NET MVC live demo [here](https://demos.boldreports.com/home/aspnet-mvc.html?utm_source=github&utm_medium=backlinks).
+Take a look at the Bold Reporting ASP.NET MVC live demo [here](https://demos.boldreports.com/home/index.html?utm_source=github&utm_medium=backlinks).
 
 ## Documentation
 
